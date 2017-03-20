@@ -1,9 +1,168 @@
-header h3
-{
-  text-align: center;
-  font-size: 20px;
+body{
+  margin: 0;
+  padding: 0;
 }
-h1
+header
 {
+  width: 100%;
+  background-color: #2a230b;
+}
+header h1
+{
+  margin:0;
+  color: orange;
+  padding: 1% 1%;
+  font-size: 60px;
   text-align: center;
+  font-family: cursive;
+}
+
+
+.nav
+{
+	width: 100%;
+	margin-bottom: 1%;
+	background-color: red;
+	box-shadow: 4px 4px 7px black;
+}
+.nav ul
+{
+	margin: 0;
+  padding: 0;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: center;
+}
+.nav ul li
+{
+	padding: 1% 4%;
+}
+
+.nav ul li a
+{
+  color:black;
+  font-weight: bold;
+  font-family:"Courier New", Courier, monospace;
+  font-size: 20px;
+  text-shadow: 3px 3px 4px #222;
+  text-decoration: none;
+}
+.nav ul li:hover{
+  background-color: blue;
+}
+
+
+
+
+section{
+  margin: 1% 0 0 0;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+}
+.image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.photo{
+  width: 23%;
+}
+.my{
+  width: 100%;
+}
+.text{
+  width: 100%;
+  background-color: grey;
+}
+.text p{
+  color: red;
+  font-size: 20px;
+  padding: 0 2%;
+}
+.college{
+  width: 100%;
+  color: orange;
+  background-image: url(../images/image.JPG);
+  background-repeat: repeat;
+}
+.college p{
+  padding:0% 2%;
+  font-size: 30px;
+}
+footer{
+  width: 100%;
+  background-color: black;
+}
+footer p{
+  padding: 1% 2%;
+  color: white;
+  margin: 0;
+}
+.social{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  background-color: brown;
+  justify-content: center;
+  background-image: url(../images/back.jpg);
+  background-repeat: repeat;
+}
+.social a{
+  margin: 0 0.5%;
+}
+a .media :hover
+{
+  opacity: 0.7;
+}
+
+@media (max-width:600px)
+{
+  header{
+    width:100%;
+  }
+  header h1
+  {
+    margin-left: 0%;
+    font-size: 30px;
+  }
+
+  section
+  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .image{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .photo{
+    margin-left: 0;
+    width: 40%;
+  }
+  .nav
+	{
+		width: 100%;
+		box-shadow: none;
+		border-top: 1px solid black;
+	}
+	.nav ul
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.nav ul li{
+		border-bottom: 1px solid black;
+	}
+	.nav ul li a{
+		font-size: 20px;
+	}
+	.nav ul li a:hover
+	{
+		color: white;
+	}
 }
