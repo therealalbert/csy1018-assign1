@@ -1,3 +1,7 @@
+Name:
+UN ID:
+
+/*The margin and padding for body is set zero*/
 body{
   margin: 0;
   padding: 0;
@@ -5,24 +9,24 @@ body{
 header
 {
   width: 100%;
-  background-color: #2a230b;
+  color:white;
 }
 header h1
 {
   margin:0;
-  color: orange;
   padding: 1% 1%;
   font-size: 60px;
-  text-align: center;
-  font-family: cursive;
+  text-align:left;
+  font-family:cursive;
+  background-color: #3e4554;
+  background-size: cover;
 }
-
 
 .nav
 {
 	width: 100%;
-	margin-bottom: 1%;
-	background-color: red;
+  padding-bottom: 0%;
+	background-color: orange;
 	box-shadow: 4px 4px 7px black;
 }
 .nav ul
@@ -32,11 +36,11 @@ header h1
 	display: flex;
 	flex-direction: row;
 	list-style: none;
-	justify-content: center;
+	justify-content:flex-end;
 }
 .nav ul li
 {
-	padding: 1% 4%;
+	padding: 1% 5%;
 }
 
 .nav ul li a
@@ -46,69 +50,100 @@ header h1
   font-family:"Courier New", Courier, monospace;
   font-size: 20px;
   text-shadow: 3px 3px 4px #222;
-  text-decoration: none;
+  text-decoration:none;
+  font-family: cursive;
+
 }
 .nav ul li:hover{
-  background-color: blue;
+  background-color:white;
 }
 
-
-
-
 section{
+  position: relative;
+  top: -15px;
   margin: 1% 0 0 0;
   width: 100%;
   display:flex;
   flex-direction: column;
 }
+
 .image{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #3e4554;
+  background-size: cover;
 }
+
 .photo{
-  width: 23%;
-}
+  width: 30%;
+  padding: 0%;
+  }
+
 .my{
   width: 100%;
+  padding: 0%;
+  margin-bottom: -4px;
 }
+
 .text{
   width: 100%;
-  background-color: grey;
-}
+  background-color: orange;
+  }
+
 .text p{
-  color: red;
+  color: black;
   font-size: 20px;
   padding: 0 2%;
+  font-family: cursive;
 }
+
 .college{
   width: 100%;
-  color: orange;
-  background-image: url(../images/image.JPG);
-  background-repeat: repeat;
+  color: black;
+  background-color:#3e4554;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .college p{
   padding:0% 2%;
-  font-size: 30px;
+  font-size: 20px;
+  font-family: cursive;
 }
+
 footer{
   width: 100%;
-  background-color: black;
+  background-color: #3e4554;
 }
+
 footer p{
   padding: 1% 2%;
   color: white;
   margin: 0;
+  text-align: center;
+  font-family: cursive;
 }
+
+footer .fp
+{
+  padding: 1% 2%;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-family: cursive;
+}
+
 .social{
   display: flex;
   flex-direction: row;
   width:100%;
-  background-color: brown;
+  background-color: black;
   justify-content: center;
   background-image: url(../images/back.jpg);
   background-repeat: repeat;
 }
+
 .social a{
   margin: 0 0.5%;
 }
@@ -116,7 +151,22 @@ a .media :hover
 {
   opacity: 0.7;
 }
-
+form
+{
+  padding:1% 0 1% 1%;
+}
+.button
+{
+  padding: 0.5% 1%;
+}
+input{
+  padding:0.5% 1%;
+  border-radius: 4px;
+}
+textarea
+{
+  border-radius: 4px;
+}
 @media (max-width:600px)
 {
   header{
@@ -134,35 +184,50 @@ a .media :hover
     flex-direction: column;
     width: 100%;
   }
+
   .image{
     width:100%;
     display: flex;
     flex-direction: row;
+    
   }
+
   .photo{
     margin-left: 0;
     width: 40%;
   }
-  .nav
-	{
+
+  .nav{
 		width: 100%;
 		box-shadow: none;
 		border-top: 1px solid black;
 	}
-	.nav ul
-	{
+
+	.nav ul{
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 	}
+
 	.nav ul li{
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid:black;
 	}
+
 	.nav ul li a{
 		font-size: 20px;
 	}
-	.nav ul li a:hover
-	{
+
+	.nav ul li a:hover{
 		color: white;
-	}
+}
+
+.text p{
+  font-size: 10px;
+  margin: 0%
+  padding: 1% 2%;
+}
+ form
+{
+  background-color: #b2aa9a;
+  width: 100%;
 }
