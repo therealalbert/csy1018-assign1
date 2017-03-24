@@ -123,15 +123,7 @@ footer p{
   margin: 0;
   text-align: center;
   font-family: cursive;
-}
-
-footer .fp
-{
-  padding: 1% 2%;
-  color: white;
-  margin: 0;
-  text-align: center;
-  font-family: cursive;
+  font-size: 15px;
 }
 
 .social{
@@ -189,7 +181,7 @@ textarea
     width:100%;
     display: flex;
     flex-direction: row;
-    
+
   }
 
   .photo{
