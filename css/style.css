@@ -264,14 +264,15 @@ textarea
 		border-bottom: 1px solid black;
 	}
 
-	.nav ul li a{
+	.nav ul li a
+  {
 		font-size: 20px;
-	}
+  }
 
-	.nav ul li a:hover{
+	.nav ul li a:hover
+  {
 		color: white;
-}
-
+  }
 .text p, .college p{
   font-size: 14px;
   margin: 0;
@@ -283,8 +284,6 @@ textarea
   display: flex;
   flex-direction: row;
 }
-
-
 .cvsection
 {
   width: 100%;
@@ -299,4 +298,5 @@ textarea
 {
   width: 100%;
   padding-left: 2%;
+}
 }
