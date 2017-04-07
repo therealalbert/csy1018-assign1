@@ -261,7 +261,7 @@ textarea
 	}
 
 	.nav ul li{
-		border-bottom: 1px solid:black;
+		border-bottom: 1px solid black;
 	}
 
 	.nav ul li a{
@@ -274,7 +274,7 @@ textarea
 
 .text p, .college p{
   font-size: 14px;
-  margin: 0%
+  margin: 0;
   padding: 1% 2%;
 }
 .contactsection
@@ -294,7 +294,6 @@ textarea
 .imagecv
 {
   width: 100%;
-  margin-left: 0 auto;
 }
 .cvleft
 {
