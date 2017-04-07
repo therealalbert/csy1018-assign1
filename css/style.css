@@ -1,29 +1,29 @@
-body{
-  margin: 0;
-  padding: 0;
-  background-color:#ff9966;
+body
+{
+  margin:0;
+  padding:0;
+
 }
 header{
+  width: 100%;
   margin:0;
-  padding:0
-  width:100%;
+  padding:0;
 }
-
 header h1
 {
   font-size: 45px;
   text-align: left;
   font-family:cursive;
-  background-color: #3e4554;
-  margin:0 auto;
+  background: linear-gradient(to left, #cfa9c8, #5c2528);
   padding: 2% 1%;
+  margin:0;
+  color: white;
 }
 .nav
 {
 	width: 100%;
-  padding-bottom: 0%;
-	background-color: #ff3300;
-	box-shadow: 4px 4px 7px black;
+	background: linear-gradient(to left, orange, #ff6632);
+	box-shadow: 4px 4px 7px blue;
 }
 .nav ul
 {
@@ -50,8 +50,18 @@ header h1
   font-family: cursive;
 
 }
+.nav ul li a:hover{
+  animation-name: example;
+  animation-duration: 2s;
+}
+@keyframes example
+{
+  from{color: black;}
+  to{color: red;}
+
+}
 .nav ul li:hover{
-  background-color:white;
+background: linear-gradient(to left, orange, #ff6632);
 }
 
 section{
@@ -59,6 +69,7 @@ section{
   width: 100%;
   display:flex;
   flex-direction: column;
+
 }
 
 .image{
@@ -84,20 +95,22 @@ section{
 
 .text{
   width: 100%;
-  background-color:none;
+  background: linear-gradient(to left, pink, #ff6632);
+
   }
 
 .text p{
-  color: black;
+  color: white;
   font-size: 20px;
   padding: 0 2%;
   font-family: cursive;
+
 }
 
 .college{
   width: 100%;
-  color: black;
-  background-color:#ff6633;
+  color: white;
+  background: linear-gradient(to left, #f7971e, #ffd200);
   background-repeat: no-repeat;
 }
 
@@ -109,7 +122,7 @@ section{
 
 footer{
   width: 100%;
-  background-color: #3e4554;
+  background: linear-gradient(to left, #cfa9c8, #5c2528);
 }
 
 footer p{
@@ -143,6 +156,8 @@ form
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
+  background: linear-gradient(to left, pink, #ff6632);
+  color: white;
 }
 label{
   padding-left: 1%;
@@ -166,8 +181,13 @@ textarea
 {
   padding-left: 1%;
 }
+.aboutbibek
+{
+  background: linear-gradient(to left, orange, #ff6632);
+}
 .aboutbibek p{
   text-align: center;
+  background: linear-gradient(to left, orange, #ff6632);
 }
 .text p, .college p{
   text-align: center;
@@ -182,6 +202,11 @@ textarea
 {
   width: 70%;
   padding: 2%;
+  background: linear-gradient(to left, pink, #ff6632);
+}
+.cvleft h3
+{
+  color: white;
 }
 .imagecv
 {
@@ -258,6 +283,8 @@ textarea
   display: flex;
   flex-direction: row;
 }
+
+
 .cvsection
 {
   width: 100%;
@@ -273,5 +300,4 @@ textarea
 {
   width: 100%;
   padding-left: 2%;
-  font-size: 20px;
 }
