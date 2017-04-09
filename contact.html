@@ -1,64 +1,50 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html><!--This is the opening HTML tag-->
+  <head><!--This is the opening head tag-->
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial scale =1">
-    <title>Homepage</title>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome To My Webpage</h1>
-    </header>
+    <title>Homepage</title><!--This is the opening title tag-->
+  </head><!--This is the closing head tag-->
+  <body><!--This is the opening body tag and the items from here are shown in the webpage-->
+    <header><!--This is the opening header tag-->
+      <h1>Welcome To My Webpage</h1><!--This is the header tag inside a header-->
+    </header><!--This is the closing header tag-->
 
-    <div class="nav">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="bio.html">ABOUT</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </div>
+    <div class="nav"><!--class with nav is inserted inside a div-->
+      <ul><!--unordered list is opened-->
+        <li><a href="index.html">HOME</a></li><!--Linked tag of home page is open and closed-->
+        <li><a href="bio.html">ABOUT</a></li><!--Linked tag of about page is open and closed-->
+        <li><a href="cv.html">CV</a></li><!--Linked tag of CV page is open and closed-->
+        <li><a href="contact.html">CONTACT</a></li><!--Link tag of contact page is open and closed-->
+      </ul><!--unordered list is closed-->
+    </div><!--div tag is closed-->
 
-    <section>
-      <div class="image"><img src="images/wallpaper.jpg" class="wall" alt="developer image">
-        <!--<div class="photo"><img src="images/chasma.jpg" class="my"></div>-->
-      </div>
+    <section><!--section starts here-->
+  <div class="image"><img src="images/wallpaper.jpg" class="wall" alt="developer image"><!--image with a class is inserted inside a div-->
+  </div><!--div for image section is closed-->
 
-      <form method="post" action="" class="forms">
-     <label>First Name:<label><br>
-     <input type="text" name="firstname" value="">
-     <br>
-     <label>Last Name:</label><br>
-     <input type="text" name="lastname" value="">
-     <br>
-     <label>Email Id:</label><br>
-      <input type="text" name="Your email address" value="">
-     <br>
-     <label>Contact Number:<label><br>
-       <input type="text" name="contactnumber" value="">
-       <br>
-     <label>Message:</label><br>
-     <textarea name="message" rows="8" cols="40"></textarea>
-     <br>
+<form method="post" action="" class="form"><!--form with post method and class with forms is created with no action-->
+<fieldset><!--fieldset is applied around the form-->
+ <legend>Feedback Us</legend><!--A legend text is given-->
+    <input type="text" name="firstname" placeholder=" Your First Name" title="Your first name goes here"></input><br><br><!--textfield for text is made with palceholder and title-->
+    <input type="text" name="lastname" placeholder=" Your Last Name" title="Your last name goes here"></input><br><br><!--textfield for text is made with palceholder and title-->
+    <input type="email" name="email" placeholder=" Your Email Address" title="Your email address goes here"></input><br><br><!--textfield for text is made with palceholder and title-->
+    <input type="number" name="number" placeholder=" Your contact number" title="Your contact number goes here"></input><br><br><!--textfield for number is made with palceholder and title-->
+    <textarea  rows="10" cols="40" placeholder=" Send Your Message" title="Your messsage/feedback goes here"></textarea><br><br><!--textarea for text is made with palceholder and title-->
+    <input type="submit" value="Submit" class="submit" title="Your datas will be submitted"></input><!--submit button is created-->
+</fieldset><!--Fieldset is closed-->
+</form><!--form is cosed-->
+</section><!--section ends here-->
 
-    <label>Gender :</label><br>
-    <input type="radio" name="gender" value="male"> Male
-    <input type="radio" name="gender" value="female"> Female
-    <input type="radio" name="gender" value="other"> Other
-    <br><br>
-    <input type="submit" value="Submit" class="button">
-  </form>
-    </section>
+    <div class="social"><!--This is the opening div tag of class social created for icons of social sites-->
+    <a href="#"><div class="media"><img src="images/fb.jpg" alt="facebook icon"></div></a><!--image with a class media is inserted inside a div-->
+    <a href="#"><div class="media"><img src="images/gg.jpg" alt="google icon"></div></a><!--image with a class media is inserted inside a div-->
+    <a href="#"><div class="media"><img src="images/tt.jpg" alt="twitter icon"></div></a><!--image with a class media is inserted inside a div-->
+    </div><!--the div tag is closed-->
 
-    <div class="social">
-    <a href="#"><div class="media"><img src="images/fb.jpg"alt="facebook icon"></div></a>
-    <a href="#"><div class="media"><img src="images/gg.jpg"alt="google icon"></div></a>
-    <a href="#"><div class="media"><img src="images/tt.jpg"alt="twitter icon"></div></a>
-  </div>
-
-    <footer>
-      <p>copyright &copy; 2017 ABM</p>
-    </footer>
-  </body>
-</html>
+    <footer><!--footer tag is opened-->
+      <p>copyright &copy; 2017 ABM</p><!--this is the end of aparagraph in footer tag-->
+      </footer><!--closing of footer tag-->
+      </body><!--end of body tag-->
+    </html><!--html tag is closed-->

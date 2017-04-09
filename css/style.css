@@ -1,30 +1,48 @@
+Name:Bibek Mishra
+UN ID:16418518
+
+
 body
 {
+
   margin:0;
   padding:0;
-
 }
-header{
+
+/*the property gives no margin or padding to the header and the width of header
+ is geven 100%.*/
+header
+{
   width: 100%;
   margin:0;
   padding:0;
 }
+/*header h1 that is the title has font size of 45px which is aligned to the left.
+Font is in cursive and linear gradient is used as background having margin 0% and
+ font color is in white.*/
 header h1
 {
   font-size: 45px;
   text-align: left;
   font-family:cursive;
   background: linear-gradient(to left, #cfa9c8, #5c2528);
-  padding: 2% 1%;
+  padding:1% 1%;
   margin:0;
   color: white;
 }
+
+/*the div with class nav is gievn 100% width using linear gradient as a bckground
+ and of box shadow given of black color.*/
 .nav
 {
 	width: 100%;
 	background: linear-gradient(to left, orange, #ff6632);
-	box-shadow: 4px 4px 7px blue;
+	box-shadow: 4px 4px 7px black;
+
 }
+
+/*The property gives no margin or padding and the navigation is directed in row
+ displaying in flex and justified at the end.*/
 .nav ul
 {
 	margin: 0;
@@ -34,98 +52,128 @@ header h1
 	list-style: none;
 	justify-content:flex-end;
 }
+
+/*The div with class nav is padded 1 and 5% from the side */
 .nav ul li
 {
 	padding: 1% 5%;
 }
 
+/*All the items within the anchor tag under list of .menu div are of black color
+ and bold font.The font family of cursive has been assigned with 20px font size
+and text shadow of 3px vertically and horizontallywith 4px of shadow opacity in
+ grey color*/
 .nav ul li a
 {
   color:black;
   font-weight: bold;
-  font-family:"Courier New", Courier, monospace;
   font-size: 20px;
   text-shadow: 3px 3px 4px #222;
   text-decoration:none;
   font-family: cursive;
-
 }
+
+/*the animation property will take 2 seconds to change its color fom black to red.*/
 .nav ul li a:hover{
   animation-name: example;
   animation-duration: 2s;
 }
+
+/*Text will change from black to red.The property is used for animation*/
 @keyframes example
 {
   from{color: black;}
   to{color: red;}
-
 }
-.nav ul li:hover{
+
+/*The property uses linear gradient on hovering*/
+.nav ul li:hover
+{
 background: linear-gradient(to left, orange, #ff6632);
 }
 
-section{
+/*The section has a full width of 100% and the items within it are displayed in
+ column with flex property giving the margin 1% from the top..*/
+section
+{
   margin:1% 0 0 0;
   width: 100%;
   display:flex;
   flex-direction: column;
-
 }
 
-.image{
+/*The div with class image is displayed in row with flex property and having
+width of 100% which is justified at center.*/
+.image
+{
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  margin:0;
+  padding:0;
 }
+
+/*The div with class wall has width of 100%.*/
 .wall
 {
   width: 100%;
 }
-.photo{
-  width: 30%;
-  padding: 0%;
-  }
 
-.my{
+/*The div with class my has no padding and margined -4x from the bottom.*/
+.my
+{
   width: 100%;
   padding: 0%;
   margin-bottom: -4px;
 }
 
-.text{
+/*linear gradient is used as background in class text*/
+.text
+{
   width: 100%;
   background: linear-gradient(to left, pink, #ff6632);
-
-  }
-
-.text p{
-  color: white;
-  font-size: 20px;
-  padding: 0 2%;
-  font-family: cursive;
-
 }
 
-.college{
+/*The paragraph of class text is padded 0 and 2% from top and bottom having a
+font color of white.*/
+.text p
+{
+  color: white;
+  font-size: 20px;
+  padding: 1% 2%;
+  font-family: cursive;
+}
+
+/*The div of class college has no repeat of background and have used linera
+gradient f width 100%.*/
+.college
+{
   width: 100%;
   color: white;
   background: linear-gradient(to left, #f7971e, #ffd200);
   background-repeat: no-repeat;
 }
 
-.college p{
-  padding:0% 2%;
+/*The paragraph inside a div of class college is padded 1 and 2% from top and
+bottom and has the font family of cursive.*/
+.college p
+{
+  padding:1% 2%;
   font-size: 20px;
   font-family: cursive;
 }
 
-footer{
+/*The footer has width of 100% and liner gradient is used as background.*/
+footer
+{
   width: 100%;
   background: linear-gradient(to left, #cfa9c8, #5c2528);
 }
 
-footer p{
+/*The paragraph inside a footer has margin zero and centrally aligned.*/
+footer p
+{
   padding: 1% 2%;
   color: white;
   margin: 0;
@@ -134,23 +182,33 @@ footer p{
   font-size: 15px;
 }
 
-.social{
+/*The div of class social placed social sites image which is displayed flex and
+ have background image which is centrally justified and there is no repetition
+ of background*/
+.social
+{
   display: flex;
   flex-direction: row;
   width:100%;
-  background-color: black;
   justify-content: center;
   background-image: url(../images/back.jpg);
   background-repeat: repeat;
 }
 
-.social a{
-  margin: 0 0.5%;
+/*The property gives margin of o.5 and 1% from top and bottom.*/
+.social a
+{
+  margin: 0.5 1%;
 }
-a .media :hover
+
+/*The property gives opacity of 0.7 on hovering of class media inside a div.*/
+a .media:hover
 {
   opacity: 0.7;
 }
+
+/*The div with class form was padded 1% both from top and bottom and linear
+gradient is used as  background having a width of 100%.*/
 form
 {
   width: 100%;
@@ -159,76 +217,103 @@ form
   background: linear-gradient(to left, pink, #ff6632);
   color: white;
 }
-label{
-  padding-left: 1%;
-}
 
-.button
+/*The property gives border radius of 4px and 1% from margin left.*/
+input
 {
-  padding: 0.5% 1%;
-}
-input{
   padding:0.5% 1%;
   margin-left: 1%;
   border-radius: 4px;
 }
+
+/*The text area in the class form has border radius of 4px.*/
 textarea
 {
   border-radius: 4px;
   margin-left: 1%;
 }
+
+/*The header of class text in bio section is padded 1% from the left.*/
 .text h2
 {
   padding-left: 1%;
 }
+
+/*The div of class aboutbibek has used linear gradient as background.*/
 .aboutbibek
 {
   background: linear-gradient(to left, orange, #ff6632);
 }
-.aboutbibek p{
+
+/*The paragraph in div of class avout bibek is centrally aligned and background
+ is used as linear gradient.*/
+.aboutbibek p
+{
   text-align: center;
   background: linear-gradient(to left, orange, #ff6632);
 }
-.text p, .college p{
+
+/*The paragraph div of class text and college were centrally aligned.*/
+.text p, .college p
+{
   text-align: center;
 }
+
+/*The section of class cv section is displayed in row and flex property is used.*/
 .cvsection
 {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
+
+/*The div of class cvleft has used linear gradient as background and padded 2%
+ from left.*/
 .cvleft
 {
   width: 70%;
   padding: 2%;
   background: linear-gradient(to left, pink, #ff6632);
 }
+
+/*The heading of class cv left was given white in color.*/
 .cvleft h3
 {
   color: white;
 }
+
+/*The div with class imagecv ahs width of 30% and flex property is used and
+is displayed in a row.*/
 .imagecv
 {
   width: 30%;
   display: flex;
   flex-direction: row;
 }
+
+/*The div with class phootocv has width of 100%.*/
 .photocv
 {
   width: 100%;
 }
+
+/*Responsiveness of browser has maximum width of 600px.*/
 @media (max-width:600px)
 {
-  header{
+  /*Header has total width of 100%.*/
+  header
+  {
     width:100%;
   }
+
+  /*header h1 has font of 30px with no padding.*/
   header h1
   {
     margin-left: 0%;
     font-size: 30px;
   }
 
+/*The section has width of 100% displaying flex in column.*/
   section
   {
     display: flex;
@@ -236,64 +321,83 @@ textarea
     width: 100%;
   }
 
-  .image{
+/*In case of responsiveness div of class image will be using flex property
+directing in row.*/
+  .image
+  {
     width:100%;
     display: flex;
     flex-direction: row;
-
   }
 
-  .photo{
-    margin-left: 0;
-    width: 40%;
-  }
 
-  .nav{
+/*The navigation bar will have width of 100% ,bordering 1px from top in solid
+black having width of 100% when it is made responsive.*/
+  .nav
+  {
 		width: 100%;
 		box-shadow: none;
 		border-top: 1px solid black;
 	}
 
-	.nav ul{
+/*The property will displayed in flex in column with navigation bar centrally
+aligned.*/
+	.nav ul
+  {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 	}
 
-	.nav ul li{
+/*The property gives the border of 1px of solid black when it is seperated from
+ other link.*/
+	.nav ul li
+  {
 		border-bottom: 1px solid black;
 	}
 
+/*The property gives the font size of 20px to the navigation.*/
 	.nav ul li a
   {
 		font-size: 20px;
   }
 
-	.nav ul li a:hover
-  {
-		color: white;
-  }
-.text p, .college p{
+
+  /*The property will givefont s ize of 14px,padding of 1 and 2% with no margin
+   in the paragraph of div of class text and college*/
+.text p, .college p
+{
   font-size: 14px;
   margin: 0;
   padding: 1% 2%;
 }
+
+/*The contact section will displayed in row using a flex property of width 100%.*/
 .contactsection
 {
   width: 100%;
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
+
+/*The cvsection will displayed in column reversing using  flex property of
+ width 100% */
 .cvsection
 {
   width: 100%;
   display: flex;
   flex-direction: column-reverse;
 }
+
+/*The div of class imagecv have width of 100%.*/
 .imagecv
 {
   width: 100%;
 }
+
+/*The div of class cvleft have width of 100% and 2% padding from left.*/
 .cvleft
 {
   width: 100%;
